@@ -1,0 +1,18 @@
+Installation:
+
+	git clone git://github.com/mattles/vimsettings.git ~/.vim
+
+Create symlinks:
+
+ln -s ~/.vim/vimrc ~/.vimrc
+
+
+load the submodules onto the computer
+
+git submodule init
+git submodule update
+
+Add new submodules:
+	git submodule add <git location > bundle/<plugin name>
+	git add .
+	git push origin master
