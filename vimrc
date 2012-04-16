@@ -24,6 +24,7 @@ set smartcase
 set incsearch "show search matches as you type
 
 map <F2> :NERDTreeToggle<CR>
+map <F3> :TlistToggle<CR>
 syntax on
 inoremap jj <Esc>
 filetype plugin on
