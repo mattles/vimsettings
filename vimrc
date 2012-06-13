@@ -12,10 +12,13 @@ set hidden
 
 "shows the line, number and column number on the bottom
 set ruler
+"shows incomplete commands at the bottom of screen
+set showcmd
 set backspace=indent,eol,start
 set autoindent
 set smartindent
 set number
+
 
 "search options
 set hlsearch
