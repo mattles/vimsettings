@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/matt/Documents/Comp317'
-let g:netrw_dirhist_2='/home/matt/Documents/Comp316/Assignment2/Othello/src/othello'
-let g:netrw_dirhist_3='/home/matt/Documents/Java/OpenGL'
-let g:netrw_dirhist_4='/home/matt/Documents/Comp453/Assignment2/mjh77_life/src/mjh77_life'
+let g:netrw_dirhist_1='/home/matt/Documents/University/Comp316/Assignment2/Othello'
+let g:netrw_dirhist_2='/home/matt/Documents/University/Comp453/Assignment3/MattHunter_life'
+let g:netrw_dirhist_3='/home/matt/Documents/University/Comp316/Assignment6'
+let g:netrw_dirhist_4='/home/matt/Documents/srcCode/ruby'
