@@ -19,3 +19,6 @@
 [submodule "bundle/nerdCommenter"]
 	path = bundle/nerdCommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git

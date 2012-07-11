@@ -12,12 +12,8 @@ set hidden
 
 "shows the line, number and column number on the bottom
 set ruler
-"
-"shows incomplete commands at the bottom of screen
-set showcmd
 set backspace=indent,eol,start
 set autoindent
-set smartindent
 set number
 
 "this is to overide the ruby plugin settings for this
@@ -28,15 +24,16 @@ set tabstop=4
 set noexpandtab
 set shiftwidth=4
 set softtabstop=4
-
 "search options
 set hlsearch
 set ignorecase "turn ignore case on for / search
 set smartcase 
 set incsearch "show search matches as you type
 
+set showcmd
+
 map <F2> :NERDTreeToggle<CR>
-map <F3> :TlistToggle<CR>
+map <F3> <leader>bs<CR>
 syntax on
 inoremap jj <Esc>
 filetype plugin on
@@ -61,7 +58,7 @@ nnoremap k gk
 nnoremap Y y$
 
 "control arrow to move around the split windows
-nnoremap <C-h>			<C-W>h
+nnoremap <C-h> 		<C-W>h
 nnoremap <C-j>       	<C-W>j
 nnoremap <C-k>      	<C-W>k
 nnoremap <C-l>      	<C-W>l
@@ -78,6 +75,10 @@ nnoremap <S-Up>        <C-W>+
 nnoremap <S-Down>      <C-W>-
 nnoremap <S-Left>      <C-W><
 nnoremap <S-Right>     <C-W>>
+
+"fixed a funny display problem in NERDTree
+let g:NERDTreeDirArrows=0
+
 
 "need this for the snipmate snippets so that the .html.erb files have
 "the right snippets
