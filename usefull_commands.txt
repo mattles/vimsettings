@@ -1,0 +1,1 @@
+:nohlsearch turn off the search highlighting
