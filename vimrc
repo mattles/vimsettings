@@ -83,3 +83,6 @@ nnoremap <S-Right>     <C-W>>
 "the right snippets
 autocmd BufNewFile,BufRead *.html.erb set ft=html.eruby syntax=eruby
 autocmd BufNewFile,BufRead *.html.erb set syntax=eruby
+
+autocmd BufWinLeave * mkview
+autocmd BufWinEnter * silent loadview
