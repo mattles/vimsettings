@@ -1,11 +1,26 @@
 
-call pathogen#infect()
-call pathogen#helptags()
-
 
 "stops backwards compatability with vi
 set nocompatible
 
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'honza/vim-snippets'
+Bundle 'MarcWeber/ultisnips'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
+Bundle 'jistr/vim-nerdtree-tabs'
+
+filetype plugin indent on
 
 "allows the closing of buffers with outsaving
 set hidden
@@ -20,10 +35,7 @@ set autoindent
 set smartindent
 set number
 
-"this is to overide the ruby plugin settings for this
-"however this should be in ~/.vim/after/ftplugin/ruby.vim
 "i think
-filetype indent plugin off
 set tabstop=4
 set noexpandtab
 set shiftwidth=4
@@ -35,7 +47,7 @@ set ignorecase "turn ignore case on for / search
 set smartcase 
 set incsearch "show search matches as you type
 
-map <F2> :NERDTreeToggle<CR>
+map <F2> :NERDTreeTabsToggle<CR>
 map <F3> :TlistToggle<CR>
 syntax on
 inoremap jj <Esc>
@@ -50,7 +62,6 @@ nmap <silent> <leader>ev :sp $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 
-nmap <silent> <leader>os :sp ~/.vim/bundle/snipmate-snippets/snippets/<CR>
 nnoremap ; :
 
 "cursor goes up to the next row rather than the next line in wrapped files
